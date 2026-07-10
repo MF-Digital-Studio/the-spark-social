@@ -24,12 +24,12 @@ const menuVariants = {
   animate: { 
     opacity: 1, 
     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-    transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1] }
+    transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1] as const }
   },
   exit: { 
     opacity: 0, 
     clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
-    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1], delay: 0.2 }
+    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] as const, delay: 0.2 }
   }
 };
 
@@ -51,13 +51,13 @@ const itemVariants = {
     opacity: 1, 
     y: 0, 
     filter: "blur(0px)",
-    transition: { duration: 0.5, ease: [0.25, 1, 0.5, 1] } 
+    transition: { duration: 0.5, ease: [0.25, 1, 0.5, 1] as const } 
   },
   exit: { 
     opacity: 0, 
     y: 20, 
     filter: "blur(4px)",
-    transition: { duration: 0.3, ease: "easeIn" } 
+    transition: { duration: 0.3, ease: "easeIn" as const } 
   }
 };
 

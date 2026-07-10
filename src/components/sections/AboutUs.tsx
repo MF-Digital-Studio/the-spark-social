@@ -14,7 +14,7 @@ export default function AboutUs() {
 
   const transitionProps = (delay: number = 0) => ({
     duration: 0.7,
-    ease: [0.215, 0.610, 0.355, 1.000],
+    ease: [0.215, 0.610, 0.355, 1.000] as const,
     delay,
   });
 
@@ -78,7 +78,7 @@ export default function AboutUs() {
                 <h4 className="text-[18px] font-medium min-w-[80px] text-black">Mission</h4>
                 <p className="text-[16px] text-gray-600 leading-relaxed flex-1">
                   Our mission is to change industry rules, reach wide audiences, produce quality work,
-                  and touch people's lives. Spark aims to exceed all expectations in the industry with
+                  and touch people&apos;s lives. Spark aims to exceed all expectations in the industry with
                   innovative and extraordinary approaches.
                 </p>
               </div>

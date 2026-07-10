@@ -27,7 +27,7 @@ export default function Footer() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000] }}
+          transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000] as const }}
           className="w-full flex justify-center"
         >
           <Image 
@@ -45,7 +45,7 @@ export default function Footer() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000], delay: 0.1 }}
+          transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000] as const, delay: 0.1 }}
           className="text-[17px] capitalize tracking-widest text-white/80 block mb-2"
         >
           Contact us
@@ -56,7 +56,7 @@ export default function Footer() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000], delay: 0.2 }}
+          transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000] as const, delay: 0.2 }}
           href="mailto:hello@thesparksocial.com" 
           className="text-[20px] font-semibold underline underline-offset-8 hover:text-white/80 transition-colors block mb-10"
         >
@@ -68,7 +68,7 @@ export default function Footer() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000], delay: 0.3 }}
+          transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000] as const, delay: 0.3 }}
           className="flex gap-4 justify-center mb-16"
         >
           <a 
