@@ -8,12 +8,11 @@ import { Menu, X, Globe, ChevronDown, ArrowRight } from "lucide-react";
 import Container from "@/src/components/ui/Container";
 
 const navLinks = [
-  { name: "About Us", href: "/about" },
-  { name: "Creator", href: "/creator" },
-  { name: "Services", href: "/services" },
-  { name: "Works", href: "/works" },
-  { name: "Brand", href: "/brand" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "About Us", href: "#about" },
+  { name: "Services", href: "#services" },
+  { name: "Works", href: "#works" },
+  { name: "Brand", href: "#brand" },
+  { name: "Contact Us", href: "#contact" },
 ];
 
 const menuVariants = {

@@ -8,7 +8,7 @@ export default function Works() {
   const works = [1, 2, 3, 4, 5, 6];
 
   return (
-    <section className="bg-sparkYellow py-20 w-full">
+    <section id="works" className="bg-sparkYellow py-20 w-full">
       <Container>
         <motion.span 
           initial={{ opacity: 0, y: 40 }}

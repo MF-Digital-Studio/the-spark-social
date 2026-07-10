@@ -108,7 +108,7 @@ export default function Services() {
   };
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section id="services" className="bg-white py-16 md:py-24">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] gap-8 md:gap-10 items-start">
 

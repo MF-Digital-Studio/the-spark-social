@@ -7,7 +7,7 @@ import Container from "@/src/components/ui/Container";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#E60000] text-white flex flex-col pt-24 pb-6 relative overflow-hidden min-h-screen">
+    <footer id="contact" className="bg-[#E60000] text-white flex flex-col pt-24 pb-6 relative overflow-hidden min-h-screen">
       <Container className="flex flex-col justify-between flex-grow">
       
       {/* Üst ve Orta İçerik Alanı */}

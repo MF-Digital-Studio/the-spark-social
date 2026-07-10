@@ -20,7 +20,7 @@ const brandLogos = [
 
 export default function Brands() {
   return (
-    <section className="bg-[#0A0A0A] text-white py-24 w-full overflow-hidden">
+    <section id="brand" className="bg-[#0A0A0A] text-white py-24 w-full overflow-hidden">
       <Container>
         {/* Top Grid */}
         <motion.div 

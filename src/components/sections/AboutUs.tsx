@@ -19,7 +19,7 @@ export default function AboutUs() {
   });
 
   return (
-    <section className="bg-white text-[#0A0A0A] py-32 relative overflow-hidden">
+    <section id="about" className="bg-white text-[#0A0A0A] py-32 relative overflow-hidden">
       {/* Background Accent Gradients (Premium Visual Polish) */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-bl from-orange-500/5 to-red-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-orange-500/5 to-red-500/5 rounded-full blur-3xl pointer-events-none" />
