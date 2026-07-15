@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="h-[95vh] w-full relative bg-[#E60000] overflow-hidden flex justify-center">
+    <div className="h-[95vh] w-full relative bg-[#df2326] overflow-hidden flex justify-center">
       {/* Background Video Wrapper */}
       <motion.div 
         initial={{ opacity: 0, y: 40 }}

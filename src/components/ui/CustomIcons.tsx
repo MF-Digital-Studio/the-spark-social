@@ -21,7 +21,7 @@ export const MissionIcon: React.FC<IconProps> = ({ size = 44, className = '', ..
         cx="12" 
         cy="12" 
         r="11" 
-        stroke="#F5A623" 
+        stroke="#ffca00" 
         strokeWidth="1" 
       />
 
@@ -70,7 +70,7 @@ export const VisionIcon: React.FC<IconProps> = ({ size = 44, className = '', ...
         cx="12" 
         cy="12" 
         r="11" 
-        stroke="#F5A623" 
+        stroke="#ffca00" 
         strokeWidth="1" 
       />
 

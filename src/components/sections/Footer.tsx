@@ -4,10 +4,13 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Container from "@/src/components/ui/Container";
+import { useLanguage } from "@/src/context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
-    <footer id="contact" className="bg-[#E60000] text-white flex flex-col pt-24 pb-6 relative overflow-hidden min-h-screen">
+    <footer id="contact" className="bg-[#df2326] text-white flex flex-col pt-24 pb-6 relative overflow-hidden min-h-screen">
       <Container className="flex flex-col justify-between flex-grow">
       
       {/* Üst ve Orta İçerik Alanı */}
@@ -20,6 +23,7 @@ export default function Footer() {
           width={180}
           height={60}
           className="w-[180px] h-auto mb-4 select-none" 
+          style={{ height: "auto" }}
         />
 
         {/* Merkez Görsel */}
@@ -48,7 +52,7 @@ export default function Footer() {
           transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000] as const, delay: 0.1 }}
           className="text-[17px] capitalize tracking-widest text-white/80 block mb-2"
         >
-          Contact us
+          {t("footer.contactUs")}
         </motion.span>
 
         {/* E-posta Linki */}
@@ -75,31 +79,55 @@ export default function Footer() {
             href="https://docs.google.com/forms/d/e/1FAIpQLSemuzNZuiuT8GPbOT6cejzB4AMtZ-gIwKB53tZtEG9tWItFYA/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-white bg-transparent text-white font-normal text-[17px] tracking-widest uppercase px-10 py-3 rounded-full hover:bg-white hover:text-[#E60000] transition-all duration-300 cursor-pointer inline-block"
+            className="border border-white bg-transparent text-white font-normal text-[17px] tracking-widest uppercase px-10 py-3 rounded-full hover:bg-white hover:text-[#df2326] transition-all duration-300 cursor-pointer inline-block"
           >
-            BRAND
+            {t("footer.brand")}
           </a>
           <a 
             href="https://docs.google.com/forms/d/e/1FAIpQLSekSOyb0cfP6y-IJnrLfHxHirtrAywMjlQUGXvVAME7KO8bfQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-white bg-transparent text-white font-normal text-[17px] tracking-widest uppercase px-10 py-3 rounded-full hover:bg-white hover:text-[#E60000] transition-all duration-300 cursor-pointer inline-block"
+            className="border border-white bg-transparent text-white font-normal text-[17px] tracking-widest uppercase px-10 py-3 rounded-full hover:bg-white hover:text-[#df2326] transition-all duration-300 cursor-pointer inline-block"
           >
-            CREATOR
+            {t("footer.creator")}
           </a>
         </motion.div>
       </div>
 
       {/* Alt Footer Barı */}
-      <div className="w-full border-t border-white pt-6 pb-2 flex flex-col md:flex-row justify-between items-center gap-4 text-white font-light">
+      <div className="w-full border-t border-white pt-6 pb-2 grid grid-cols-1 md:grid-cols-3 gap-6 text-white font-light items-center">
         
-        {/* Sol Taraf (Telif Yazısı) */}
-        <div className="text-[17px]">
-          © 2026 spark.
+        {/* Sol Taraf (Telif Yazısı ve IAB Logosu) */}
+        <div className="flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start gap-4 sm:gap-6">
+          <span className="text-[17px] leading-none md:mb-2">
+            {t("footer.rights")}
+          </span>
+          {/* IAB Logo */}
+          <div className="flex items-center justify-center">
+            <Image 
+              src="/figures/iab.png" 
+              alt="IAB Logo" 
+              width={140}
+              height={60}
+              className="h-10 sm:h-12 w-auto object-contain" 
+            />
+          </div>
+        </div>
+
+        {/* Orta Taraf (Designed By) */}
+        <div className="flex items-center justify-center text-center">
+          <a 
+            href="https://www.mfdigitalstudio.com/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-[10px] sm:text-[11px] font-normal tracking-wide text-white/70 hover:text-white transition-colors underline decoration-white/30 underline-offset-4 hover:decoration-white"
+          >
+            {t("footer.designedBy")}
+          </a>
         </div>
 
         {/* Sağ Taraf (Sosyal Medya İkonları) */}
-        <div className="flex items-center gap-5">
+        <div className="flex items-center justify-center md:justify-end gap-5">
           <a 
             href="https://www.tiktok.com/@thesparksocialcom" 
             target="_blank"

@@ -20,8 +20,8 @@ const config: Config = {
         },
       },
       colors: {
-        sparkRed: '#E60000',
-        sparkYellow: '#FACC15',
+        sparkRed: '#df2326',
+        sparkYellow: '#ffca00',
         darkBg: '#0A0A0A',
       },
       fontFamily: {

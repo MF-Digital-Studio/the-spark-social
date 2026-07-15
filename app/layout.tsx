@@ -26,13 +26,17 @@ export const metadata: Metadata = {
   },
   description: "We are a full-service creative agency specializing in advertisement, film production, and talent management. Shaping digital culture through bold storytelling.",
   keywords: [
+    "thesparksocial",
+    "thespark",
+    "spark",
+    "The Spark Social",
+    "The Spark",
     "creative agency", 
     "digital agency", 
     "film production", 
     "talent management", 
     "social media marketing", 
     "content creation", 
-    "The Spark", 
     "Imediaff",
     "production community"
   ],
@@ -83,6 +87,10 @@ export const metadata: Metadata = {
   },
 };
 
+import { LanguageProvider } from "@/src/context/LanguageContext";
+import ScrollToTop from "@/src/components/common/ScrollToTop";
+import SmoothScroll from "@/src/components/common/SmoothScroll";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -92,10 +100,16 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className={`${poppins.className} min-h-full flex flex-col`}>
-        <Navbar />
-        {children}
+      <body className={`${poppins.className} min-h-full flex flex-col`} suppressHydrationWarning>
+        <SmoothScroll>
+          <LanguageProvider>
+            <Navbar />
+            {children}
+            <ScrollToTop />
+          </LanguageProvider>
+        </SmoothScroll>
       </body>
     </html>
   );
