@@ -26,7 +26,7 @@ export default function ServiceDetails() {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className="lg:col-span-5 flex flex-col items-center lg:items-start"
             >
-              <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-[#df2326] tracking-tight leading-none mb-8 text-center lg:text-left flex flex-col">
+              <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-[#df2326] tracking-tight leading-none mb-8 text-center lg:text-left flex flex-col capitalize">
                 <span>{t("serviceDetails.influencerTitle1")}</span>
                 <span>{t("serviceDetails.influencerTitle2")}</span>
               </h2>
@@ -119,7 +119,7 @@ export default function ServiceDetails() {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className="lg:col-span-5 flex flex-col items-center lg:items-start"
             >
-              <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-[#df2326] tracking-tight leading-none mb-8 text-center lg:text-left">
+              <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-[#df2326] tracking-tight leading-none mb-8 text-center lg:text-left capitalize">
                 {t("serviceDetails.productionTitle")}
               </h2>
               
