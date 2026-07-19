@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Container from "@/src/components/ui/Container";
 import { useLanguage } from "@/src/context/LanguageContext";
@@ -104,6 +104,17 @@ const WORKS_DATA: WorkItem[] = [
 ];
 
 function DominantChromePhoneMockup({ src }: { src: string }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const isInView = useInView(videoRef, { margin: "200px 0px" });
+
+  useEffect(() => {
+    if (isInView && videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    } else if (!isInView && videoRef.current) {
+      videoRef.current.pause();
+    }
+  }, [isInView]);
+
   return (
     <div className="relative w-full aspect-[9/18.5] flex flex-col items-center flex-shrink-0">
       {/* Sleek Chrome Phone Frame */}
@@ -119,12 +130,12 @@ function DominantChromePhoneMockup({ src }: { src: string }) {
 
           {/* Large Video Player */}
           <video
+            ref={videoRef}
             src={src}
-            autoPlay
             loop
             muted
             playsInline
-            preload="auto"
+            preload="none"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
 
