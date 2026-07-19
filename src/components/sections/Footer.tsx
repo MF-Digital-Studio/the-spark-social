@@ -36,11 +36,11 @@ export default function Footer() {
         >
           <Image 
             src="/want-to-spark-with-us.svg" 
-            alt="Want to spark with us?" 
-            width={1024}
+            alt="WANT TO SPARK WITH US?" 
+            width={1200}
             height={150}
-            className="w-full max-w-[1024px] h-auto object-contain my-8 select-none mx-auto"
-            draggable={false}
+            className="w-[85%] md:w-[75%] max-w-[1000px] object-contain opacity-90 mx-auto block"
+            style={{ width: "auto", height: "auto" }}
           />
         </motion.div>
 

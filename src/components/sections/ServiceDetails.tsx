@@ -33,12 +33,13 @@ export default function ServiceDetails() {
               
               <div className="relative w-full max-w-[320px] sm:max-w-[400px] aspect-[1/1] mt-auto">
                 <div className="absolute -top-8 md:-top-12 left-1/2 -translate-x-1/2 z-10">
-                  <Image src="/figures/calendar_figure.png" alt="Calendar Icon" width={90} height={90} className="object-contain opacity-90" />
+                  <Image src="/figures/calendar_figure.png" alt="Calendar Icon" width={90} height={90} className="object-contain opacity-90" style={{ width: "auto", height: "auto" }} />
                 </div>
                 <Image
                   src="/figures/story_figure.png"
                   alt="Influencer Marketing Figure"
                   fill
+                  sizes="(max-width: 640px) 320px, 400px"
                   className="object-contain object-bottom"
                 />
               </div>
@@ -123,11 +124,12 @@ export default function ServiceDetails() {
                 {t("serviceDetails.productionTitle")}
               </h2>
               
-              <div className="relative w-full max-w-[340px] sm:max-w-[420px] aspect-[1/1] mt-auto">
+              <div className="relative w-full max-w-[320px] sm:max-w-[400px] aspect-[1/1] mt-auto">
                 <Image
                   src="/figures/production_figure.png"
                   alt="Production Figure"
                   fill
+                  sizes="(max-width: 640px) 320px, 400px"
                   className="object-contain object-bottom"
                 />
               </div>
