@@ -3,10 +3,10 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/src/components/common/Navbar";
 
-const poppins = Poppins({ 
-  subsets: ['latin'], 
+const poppins = Poppins({
+  subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap' 
+  display: 'swap'
 });
 
 const geistSans = Geist({
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     "spark",
     "The Spark Social",
     "The Spark",
-    "creative agency", 
-    "digital agency", 
-    "film production", 
-    "talent management", 
-    "social media marketing", 
-    "content creation", 
+    "creative agency",
+    "digital agency",
+    "film production",
+    "talent management",
+    "social media marketing",
+    "content creation",
     "Imediaff",
     "production community"
   ],
