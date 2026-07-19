@@ -74,6 +74,13 @@ export default function Navbar() {
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
+    
+    // Force scroll to top on page refresh
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -101,7 +108,13 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex items-center select-none"
-            onClick={() => setIsOpen(false)}
+            onClick={(e) => {
+              if (window.location.pathname === '/') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+              setIsOpen(false);
+            }}
           >
             <Image
               src="/logo.svg"
