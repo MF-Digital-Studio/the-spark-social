@@ -32,6 +32,9 @@ export default function ServiceDetails() {
               </h2>
               
               <div className="relative w-full max-w-[320px] sm:max-w-[400px] aspect-[1/1] mt-auto">
+                <div className="absolute -top-8 md:-top-12 left-1/2 -translate-x-1/2 z-10">
+                  <Image src="/figures/calendar_figure.png" alt="Calendar Icon" width={90} height={90} className="object-contain opacity-90" />
+                </div>
                 <Image
                   src="/figures/story_figure.png"
                   alt="Influencer Marketing Figure"
@@ -76,9 +79,6 @@ export default function ServiceDetails() {
 
               {/* HIKAYE Text - Indented */}
               <div className="md:ml-[15%] w-full md:w-[85%] relative">
-                <div className="absolute -left-[110px] top-0 hidden xl:block">
-                  <Image src="/figures/calendar_figure.png" alt="Calendar Icon" width={90} height={90} className="object-contain opacity-90" />
-                </div>
                 <h3 className="text-2xl sm:text-3xl font-black mb-3">{t("serviceDetails.storyTitle")}</h3>
                 <p className="text-base sm:text-lg font-medium leading-snug">
                   {t("serviceDetails.storyText1")}
