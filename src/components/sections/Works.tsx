@@ -40,7 +40,7 @@ const WORKS_DATA: WorkItem[] = [
   },
   {
     id: "selen",
-    handle: "@sln.kivanc",
+    handle: "@selenkivanc_",
     campaignTr: "Alpro Blue Cloud Alproccino Lansmanı",
     campaignEn: "Alpro Blue Cloud Alproccino Launch",
     src: "/videos/sln_video.mp4",
