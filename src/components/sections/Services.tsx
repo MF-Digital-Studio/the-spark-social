@@ -34,12 +34,12 @@ export default function Services() {
             </h2>
 
             {/* Phone Figure */}
-            <div className="relative w-full max-w-[420px] sm:max-w-[520px] aspect-[4/5] mx-auto lg:mx-0">
+            <div className="relative w-full max-w-[500px] sm:max-w-[600px] aspect-[4/5] mx-auto lg:mx-0">
               <Image
                 src={language === "en" ? "/figures/english_phone_v2-Photoroom.png" : "/figures/turkish_phone_v2-Photoroom.png"}
                 alt="Hizmet Alanlarımız Telefon Görseli"
                 fill
-                sizes="(max-width: 640px) 420px, 520px"
+                sizes="(max-width: 640px) 500px, 600px"
                 className="object-contain"
               />
             </div>
