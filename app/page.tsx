@@ -36,9 +36,9 @@ export default function Home() {
       <div className="relative -mt-[1px] z-10">
         <TalentDetail />
       </div>
-      <div className="relative -mt-[1px] z-10">
+      {/* <div className="relative -mt-[1px] z-10">
         <Creators />
-      </div>
+      </div> */}
       <div className="relative -mt-[1px] z-10">
         <Works />
       </div>

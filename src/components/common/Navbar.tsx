@@ -11,7 +11,7 @@ const navLinks = [
   { nameKey: "nav.about", href: "#about" },
   { nameKey: "nav.services", href: "#services" },
   { nameKey: "nav.works", href: "#works" },
-  { nameKey: "nav.creators", href: "#creators" },
+  // { nameKey: "nav.creators", href: "#creators" },
   { nameKey: "nav.brand", href: "#brand" },
   { nameKey: "nav.contact", href: "#contact" },
 ];
