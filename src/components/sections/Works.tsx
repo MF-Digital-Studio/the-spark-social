@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Play } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Container from "@/src/components/ui/Container";
 import { useLanguage } from "@/src/context/LanguageContext";
 
@@ -104,28 +104,13 @@ const WORKS_DATA: WorkItem[] = [
 ];
 
 function DominantChromePhoneMockup({ src }: { src: string }) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handlePlayClick = () => {
-    if (videoRef.current) {
-      if (!isPlaying) {
-        videoRef.current.play().catch(() => {});
-        setIsPlaying(true);
-      } else {
-        videoRef.current.pause();
-        setIsPlaying(false);
-      }
-    }
-  };
-
   return (
-    <div className="relative w-full aspect-[9/18.5] flex flex-col items-center flex-shrink-0 cursor-pointer" onClick={handlePlayClick}>
+    <div className="relative w-full aspect-[9/18.5] flex flex-col items-center flex-shrink-0">
       {/* Sleek Chrome Phone Frame */}
       <div className="relative w-full h-full bg-gradient-to-br from-slate-100 via-white to-slate-300 rounded-[36px] sm:rounded-[44px] p-[3px] sm:p-[4px] shadow-[0_25px_50px_rgba(0,0,0,0.35)] flex flex-col justify-between overflow-hidden group-hover:scale-[1.04] transition-all duration-500 z-10">
         
         {/* Screen Display Area */}
-        <div className="relative w-full h-full rounded-[32px] sm:rounded-[40px] overflow-hidden bg-black group">
+        <div className="relative w-full h-full rounded-[32px] sm:rounded-[40px] overflow-hidden bg-black">
           
           {/* Dynamic Island Notch */}
           <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-12 sm:w-14 h-3.5 bg-black rounded-full z-20 flex items-center justify-end px-1.5 gap-1 opacity-90">
@@ -134,23 +119,14 @@ function DominantChromePhoneMockup({ src }: { src: string }) {
 
           {/* Large Video Player */}
           <video
-            ref={videoRef}
             src={src}
+            autoPlay
             loop
             muted
             playsInline
-            preload="none"
+            preload="auto"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
-
-          {/* Play Button Overlay */}
-          {!isPlaying && (
-            <div className="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-[2px] z-20 transition-opacity duration-300 group-hover:bg-black/40">
-              <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-                <Play className="w-8 h-8 text-white ml-1" fill="currentColor" />
-              </div>
-            </div>
-          )}
 
           {/* Glare Effect */}
           <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/20 pointer-events-none z-10" />

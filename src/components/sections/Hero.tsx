@@ -1,20 +1,9 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
-import { motion, useInView } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const isInView = useInView(videoRef, { margin: "200px 0px" });
-
-  useEffect(() => {
-    if (isInView && videoRef.current) {
-      videoRef.current.play().catch(() => {});
-    } else if (!isInView && videoRef.current) {
-      videoRef.current.pause();
-    }
-  }, [isInView]);
-
   return (
     <div className="h-[95vh] w-full relative bg-[#df2326] overflow-hidden flex justify-center">
       {/* Background Video Wrapper */}
@@ -26,8 +15,8 @@ export default function Hero() {
         className="relative w-full max-w-[1920px] h-full bg-black z-10"
       >
         <video
-          ref={videoRef}
           src="/videos/hero-video.mp4"
+          autoPlay
           loop
           muted
           playsInline
