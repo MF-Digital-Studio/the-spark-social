@@ -119,10 +119,9 @@ export default function Navbar() {
             <Image
               src="/logo.svg"
               alt="Spark Logo"
-              width={120}
-              height={40}
+              width={150}
+              height={50}
               className="h-8 md:h-10 w-auto object-contain"
-              style={{ width: "auto", height: "auto" }}
               priority
             />
           </Link>

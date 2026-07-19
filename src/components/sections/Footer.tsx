@@ -23,16 +23,15 @@ export default function Footer() {
           width={180}
           height={60}
           className="w-[180px] h-auto mb-4 select-none" 
-          style={{ height: "auto" }}
         />
 
         {/* Merkez Görsel */}
         <motion.div 
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.215, 0.610, 0.355, 1.000] as const }}
-          className="w-full flex justify-center"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-20 sm:mb-24 w-full"
         >
           <Image 
             src="/want-to-spark-with-us.svg" 
@@ -40,7 +39,6 @@ export default function Footer() {
             width={1200}
             height={150}
             className="w-[85%] md:w-[75%] max-w-[1000px] object-contain opacity-90 mx-auto block"
-            style={{ width: "auto", height: "auto" }}
           />
         </motion.div>
 

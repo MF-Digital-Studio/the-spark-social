@@ -33,7 +33,7 @@ export default function ServiceDetails() {
               
               <div className="relative w-full max-w-[320px] sm:max-w-[400px] aspect-[1/1] mt-auto">
                 <div className="absolute -top-8 md:-top-12 left-1/2 -translate-x-1/2 z-10">
-                  <Image src="/figures/calendar_figure.png" alt="Calendar Icon" width={90} height={90} className="object-contain opacity-90" style={{ width: "auto", height: "auto" }} />
+                  <Image src="/figures/calendar_figure.png" alt="Calendar Icon" width={90} height={90} className="object-contain opacity-90" />
                 </div>
                 <Image
                   src="/figures/story_figure.png"
