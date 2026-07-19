@@ -2,6 +2,7 @@ import Hero from "@/src/components/sections/Hero";
 import AboutUs from "@/src/components/sections/AboutUs";
 import Services from "@/src/components/sections/Services";
 import TalentDetail from "@/src/components/sections/TalentDetail";
+import ServiceDetails from "@/src/components/sections/ServiceDetails";
 import Creators from "@/src/components/sections/Creators";
 import Works from "@/src/components/sections/Works";
 import Brands from "@/src/components/sections/Brands";
@@ -35,6 +36,9 @@ export default function Home() {
       </div>
       <div className="relative -mt-[1px] z-10">
         <TalentDetail />
+      </div>
+      <div className="relative -mt-[1px] z-10">
+        <ServiceDetails />
       </div>
       {/* <div className="relative -mt-[1px] z-10">
         <Creators />
