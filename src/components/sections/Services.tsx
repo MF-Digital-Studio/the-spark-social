@@ -33,13 +33,13 @@ export default function Services() {
               {t("services.title")}
             </h2>
 
-            {/* Hand with Phone Figure */}
-            <div className="relative w-full max-w-[340px] sm:max-w-[420px] aspect-[4/5] mx-auto lg:mx-0">
+            {/* Phone Figure */}
+            <div className="relative w-full max-w-[420px] sm:max-w-[520px] aspect-[4/5] mx-auto lg:mx-0">
               <Image
                 src={language === "en" ? "/figures/english_phone_v2-Photoroom.png" : "/figures/turkish_phone_v2-Photoroom.png"}
                 alt="Hizmet Alanlarımız Telefon Görseli"
                 fill
-                sizes="(max-width: 640px) 340px, 420px"
+                sizes="(max-width: 640px) 420px, 520px"
                 className="object-contain"
               />
             </div>
