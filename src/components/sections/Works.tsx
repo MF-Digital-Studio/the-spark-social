@@ -66,6 +66,41 @@ const WORKS_DATA: WorkItem[] = [
     campaignEn: "Paribu Cineverse Oscar Marathon",
     src: "/videos/koray_video.mp4",
   },
+  {
+    id: "fatih_levis",
+    handle: "@fatihfiratbalci",
+    campaignTr: "Denim'in zamansız hali. Levi's orijinalin her zaman arkasında.",
+    campaignEn: "Timeless denim. Levi's always stands behind the original.",
+    src: "/videos/fatih_video.mp4",
+  },
+  {
+    id: "gulce_samsung",
+    handle: "@gulcecantuurk",
+    campaignTr: "Galaxy S26 Ultra x Google Gemini Circle to Search",
+    campaignEn: "Galaxy S26 Ultra x Google Gemini Circle to Search",
+    src: "/videos/gulce_video_samsung.mp4",
+  },
+  {
+    id: "seymur_boyner",
+    handle: "@seymur_ilham",
+    campaignTr: "Boyner Online Yaz Fırsatları",
+    campaignEn: "Boyner Online Summer Finds",
+    src: "/videos/seymur_video.mp4",
+  },
+  {
+    id: "selen_boyner",
+    handle: "@selenkivanc_",
+    campaignTr: "Boyner Online Dünya Kupası Aktivasyonu",
+    campaignEn: "Boyner Online World Cup Launch",
+    src: "/videos/sln_video_boyner.mp4",
+  },
+  {
+    id: "gulce_urbancare",
+    handle: "@gulcecantuurk",
+    campaignTr: "Urban Care Jujutsu Trend",
+    campaignEn: "Urban Care Jujutsu Trend",
+    src: "/videos/gulce_video.mp4",
+  },
 ];
 
 function DominantChromePhoneMockup({ src }: { src: string }) {
