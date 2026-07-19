@@ -36,7 +36,7 @@ export default function Services() {
             {/* Hand with Phone Figure */}
             <div className="relative w-full max-w-[340px] sm:max-w-[420px] aspect-[4/5] mx-auto lg:mx-0">
               <Image
-                src={language === "en" ? "/figures/english_phone-Photoroom.png" : "/figures/turkish_phone-Photoroom.png"}
+                src={language === "en" ? "/figures/english_phone_v2-Photoroom.png" : "/figures/turkish_phone_v2-Photoroom.png"}
                 alt="Hizmet Alanlarımız Telefon Görseli"
                 fill
                 sizes="(max-width: 640px) 340px, 420px"
