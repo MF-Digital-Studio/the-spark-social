@@ -14,7 +14,7 @@ export default function ServiceDetails() {
     <section className="bg-[#ffca00] w-full relative overflow-hidden text-[#111]">
       
       {/* ─── INFLUENCER MARKETING SECTION ───────────────────────────────────── */}
-      <div className="py-24 md:py-32 border-b border-black/10">
+      <div className="py-24 md:py-32">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8">
             
