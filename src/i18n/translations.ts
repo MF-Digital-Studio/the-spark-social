@@ -30,15 +30,15 @@ export const translations = {
       title: "Hizmet Alanlarımız",
       items: [
         {
-          title: "TALENT MANAGEMENT",
+          title: "YETENEK YÖNETİMİ",
           flow: ["Tuval", "Eser", "Sergi"]
         },
         {
-          title: "INFLUENCER MARKETING",
+          title: "INFLUENCER PAZARLAMA",
           flow: ["İçgörü", "Hikaye", "Etki"]
         },
         {
-          title: "PRODUCTION",
+          title: "PRODÜKSİYON",
           flow: ["Hız", "Kalite", "Yaratıcılık"]
         }
       ]
@@ -95,9 +95,9 @@ export const translations = {
       prodText7: "markanın hikayesini en güçlü şekilde anlatacak",
       prodText8: " prodüksiyon süreçleri tasarlıyoruz.",
       prodBoxLine1: "* Reel / TikTok / YouTube içerik prodüksiyonu",
-      prodBoxLine2: "* Creative direction & set-up",
+      prodBoxLine2: "* Kreatif yönlendirme & set kurulumu",
       prodBoxLine3: "* Fotoğraf & video çekimleri",
-      prodBoxLine4: "* Post-production & editing"
+      prodBoxLine4: "* Post-prodüksiyon & kurgu"
     },
     works: {
       title1: "Örnek",
