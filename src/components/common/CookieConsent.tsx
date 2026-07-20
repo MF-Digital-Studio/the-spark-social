@@ -44,17 +44,10 @@ export default function CookieConsent() {
         >
           <div className="p-6 sm:p-8 flex flex-col gap-5">
             {/* Header */}
-            <div className="flex items-start justify-between gap-4">
+            <div>
               <h3 className="text-[#ffca00] font-black text-2xl sm:text-3xl tracking-tighter uppercase leading-none">
                 {language === "en" ? "Cookies." : "Çerezler."}
               </h3>
-              <button
-                onClick={handleReject}
-                className="text-white/60 hover:text-white hover:rotate-90 transition-all duration-300"
-                aria-label="Close"
-              >
-                <X size={24} strokeWidth={2.5} />
-              </button>
             </div>
 
             {/* Body Text */}
