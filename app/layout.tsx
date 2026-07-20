@@ -90,6 +90,7 @@ export const metadata: Metadata = {
 import { LanguageProvider } from "@/src/context/LanguageContext";
 import ScrollToTop from "@/src/components/common/ScrollToTop";
 import SmoothScroll from "@/src/components/common/SmoothScroll";
+import CookieConsent from "@/src/components/common/CookieConsent";
 
 export default function RootLayout({
   children,
@@ -108,6 +109,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <ScrollToTop />
+            <CookieConsent />
           </LanguageProvider>
         </SmoothScroll>
       </body>

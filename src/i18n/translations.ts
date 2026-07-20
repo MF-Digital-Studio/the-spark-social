@@ -118,6 +118,15 @@ export const translations = {
       designedBy: "Designed By MF Digital Studio",
       brand: "MARKA",
       creator: "CREATOR"
+    },
+    cookie: {
+      text: "Size daha iyi bir deneyim sunabilmek için sitemizde çerezler kullanılmaktadır. Detaylı bilgi için ",
+      privacyPolicy: "Gizlilik Politikası",
+      and: " ve ",
+      kvkk: "KVKK Metni",
+      textEnd: "'ni inceleyebilirsiniz.",
+      accept: "Kabul Et",
+      reject: "Reddet"
     }
   },
   en: {
@@ -239,6 +248,15 @@ export const translations = {
       designedBy: "Designed By MF Digital Studio",
       brand: "BRAND",
       creator: "CREATOR"
+    },
+    cookie: {
+      text: "We use cookies to offer you a better experience. For more information, please read our ",
+      privacyPolicy: "Privacy Policy",
+      and: " and ",
+      kvkk: "KVKK Notice",
+      textEnd: ".",
+      accept: "Accept All",
+      reject: "Reject"
     }
   }
 };
