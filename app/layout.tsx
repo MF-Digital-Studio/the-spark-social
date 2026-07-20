@@ -99,10 +99,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       suppressHydrationWarning
     >
-      <body className={`${poppins.className} min-h-full flex flex-col`} suppressHydrationWarning>
+      <body className={poppins.className} suppressHydrationWarning>
         <SmoothScroll>
           <LanguageProvider>
             <Navbar />
