@@ -10,11 +10,11 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer id="contact" className="bg-[#df2326] text-white flex flex-col pt-24 pb-6 relative overflow-hidden min-h-screen">
-      <Container className="flex flex-col justify-between flex-grow">
+    <footer id="contact" className="bg-[#df2326] text-white flex flex-col pt-24 pb-6 relative overflow-hidden">
+      <Container className="flex flex-col">
       
       {/* Üst ve Orta İçerik Alanı */}
-      <div className="flex flex-col items-center justify-center flex-grow text-center">
+      <div className="flex flex-col items-center justify-center text-center">
         
         {/* En Üstte Logo */}
         <Image 

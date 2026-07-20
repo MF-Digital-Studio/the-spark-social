@@ -53,13 +53,6 @@ const WORKS_DATA: WorkItem[] = [
     src: "/videos/çağatay_video.mp4",
   },
   {
-    id: "irem",
-    handle: "@iiremall",
-    campaignTr: "Paribu Cineverse Emaar ScreenX Lansmanı",
-    campaignEn: "Paribu Cineverse Emaar ScreenX Launch",
-    src: "/videos/irem_video.mp4",
-  },
-  {
     id: "koray",
     handle: "@koraykry11",
     campaignTr: "Paribu Cineverse Oscar Maratonu",
